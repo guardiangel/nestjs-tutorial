@@ -1,5 +1,11 @@
 1.Start the database
 E:\graphqlcourse\nestjs-tutorial>docker compose up nestjs-tutorial -d
+(
+After changing package.json, we can use the following:
+E:\graphqlcourse\nestjs-tutorial> yarn db:dev:restart
+E:\graphqlcourse\nestjs-tutorial> yarn prisma:restart
+
+)
 2.Start app
 E:\graphqlcourse>yarn start:dev
 3.Start prisma client
@@ -71,7 +77,15 @@ E:\graphqlcourse\nestjs-tutorial>nest g service prisma --no-spec
    E:\graphqlcourse\nestjs-tutorial> yarn add argon2
 
 9.Modify package.json add script to restart docker and adjust prisma
-     E:\graphqlcourse\nestjs-tutorial> docker compose rm dev-db -s -v -f
+"scripts": {
+    "prisma:dev:deploy": "prisma migrate deploy",
+    "db:dev:rm": "docker compose rm nestjs-tutorial -s -f -v",
+    "db:dev:up": "docker compose up nestjs-tutorial -d",
+    "db:dev:restart": "yarn db:dev:rm && yarn db:dev:up",
+    "prisma:restart": "yarn prisma:dev:deploy"
+}
+     E:\graphqlcourse\nestjs-tutorial> yarn db:dev:restart
+     E:\graphqlcourse\nestjs-tutorial> yarn prisma:restart
 
 TroubleShooting:
 1.If you get "delete ␍ eslintprettier/prettier" error, try:
