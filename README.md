@@ -81,6 +81,12 @@ lastName: string;
 4.9 We can use the following command to access the postgres database now.
 E:\graphqlcourse\nestjs-tutorial>npx prisma studio
 
+5.Create module prisma (Here we use nest g module prisma, we can use other names like prismatest,etc, we already have done it manually before, just list the command for instruction)
+E:\graphqlcourse\nestjs-tutorial>nest g module prisma
+
+6.Also create service prisma used for connecting to database
+E:\graphqlcourse\nestjs-tutorial>nest g service prisma --no-spec
+
 TroubleShooting:
 1.If you get "delete ␍ eslintprettier/prettier" error, try:
 E:\graphqlcourse\nestjs-tutorial>yarn run lint --fix
