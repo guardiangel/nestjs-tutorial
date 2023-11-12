@@ -87,6 +87,11 @@ E:\graphqlcourse\nestjs-tutorial>nest g module prisma
 6.Also create service prisma used for connecting to database
 E:\graphqlcourse\nestjs-tutorial>nest g service prisma --no-spec
 
+7. Add class validator to verify request parameters
+   E:\graphqlcourse\nestjs-tutorial> yarn add class-validator class-transformer
+
 TroubleShooting:
 1.If you get "delete ␍ eslintprettier/prettier" error, try:
 E:\graphqlcourse\nestjs-tutorial>yarn run lint --fix
+2.Meet error when installing class-validator class-transformer in setp 7. The problem is probably the version.
+Change ts-loader version in package.json.
