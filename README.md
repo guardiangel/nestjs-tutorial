@@ -90,6 +90,12 @@ E:\graphqlcourse\nestjs-tutorial>nest g service prisma --no-spec
 10. Add @nestjs/config to use config the database,etc.
      E:\graphqlcourse\nestjs-tutorial> yarn add @nestjs/config
 
+11. Add passport and jwt plugin to verify the token.
+E:\graphqlcourse\nestjs-tutorial>yarn add @nestjs/passport passport
+E:\graphqlcourse\nestjs-tutorial>yarn add @nestjs/jwt passport-jwt
+E:\graphqlcourse\nestjs-tutorial>yarn add -D @types/passport-jwt
+
+
 TroubleShooting:
 1.If you get "delete ␍ eslintprettier/prettier" error, try:
 E:\graphqlcourse\nestjs-tutorial>yarn run lint --fix
