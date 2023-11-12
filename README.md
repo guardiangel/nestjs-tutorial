@@ -87,6 +87,9 @@ E:\graphqlcourse\nestjs-tutorial>nest g service prisma --no-spec
      E:\graphqlcourse\nestjs-tutorial> yarn db:dev:restart
      E:\graphqlcourse\nestjs-tutorial> yarn prisma:restart
 
+10. Add @nestjs/config to use config the database,etc.
+     E:\graphqlcourse\nestjs-tutorial> yarn add @nestjs/config
+
 TroubleShooting:
 1.If you get "delete ␍ eslintprettier/prettier" error, try:
 E:\graphqlcourse\nestjs-tutorial>yarn run lint --fix

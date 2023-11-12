@@ -50,7 +50,6 @@ export class AuthService {
       },
     });
     //if use does not exist, throw exception
-
     if (!user) {
       throw new ForbiddenException('Credentials incorrect');
     }
