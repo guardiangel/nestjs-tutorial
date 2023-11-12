@@ -90,6 +90,9 @@ E:\graphqlcourse\nestjs-tutorial>nest g service prisma --no-spec
 7. Add class validator to verify request parameters
    E:\graphqlcourse\nestjs-tutorial> yarn add class-validator class-transformer
 
+8. Install argon2 to generate encrypted password
+   E:\graphqlcourse\nestjs-tutorial> yarn add argon2
+
 TroubleShooting:
 1.If you get "delete ␍ eslintprettier/prettier" error, try:
 E:\graphqlcourse\nestjs-tutorial>yarn run lint --fix
