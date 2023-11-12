@@ -70,6 +70,9 @@ E:\graphqlcourse\nestjs-tutorial>nest g service prisma --no-spec
 8. Install argon2 to generate encrypted password
    E:\graphqlcourse\nestjs-tutorial> yarn add argon2
 
+9.Modify package.json add script to restart docker and adjust prisma
+     E:\graphqlcourse\nestjs-tutorial> docker compose rm dev-db -s -v -f
+
 TroubleShooting:
 1.If you get "delete ␍ eslintprettier/prettier" error, try:
 E:\graphqlcourse\nestjs-tutorial>yarn run lint --fix
