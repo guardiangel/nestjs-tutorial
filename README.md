@@ -56,6 +56,30 @@ E:\graphqlcourse\nestjs-tutorial>yarn add -D prisma
 E:\graphqlcourse\nestjs-tutorial>yarn add @prisma/client
 4.2.Initialize Prisma
 E:\graphqlcourse\nestjs-tutorial>npx prisma init
+4.3. Install Prisma plugin in vscode studio for prompting syntax.
+4.4. Edit the DATABASE_URL of .env file based on the configurations in the docker-compose.yml file.
+DATABASE_URL="postgresql://postgres:123@localhost:5434/nest?schema=public"
+4.5. Add modles in schema.prisma file.
+4.6 Run the prisma to initialize tables defined in schema.prisma
+E:\graphqlcourse\nestjs-tutorial>npx prisma migrate dev
+
+4.7.Run the following command (this will generate type of data we defined in schema.prisma):
+4.7.1 E:\graphqlcourse\nestjs-tutorial>npx prisma generate
+4.7.2 The structure looks like the following (don't need to define in the project anymore):
+type User = {
+id: number;
+createAt: Date;
+updateAt: Date;
+email: string;
+hash: string;
+firstName: string;
+lastName: string;
+}
+
+4.8 We can directly use it in our code now, refer to auth.service.ts
+
+4.9 We can use the following command to access the postgres database now.
+E:\graphqlcourse\nestjs-tutorial>npx prisma studio
 
 TroubleShooting:
 1.If you get "delete ␍ eslintprettier/prettier" error, try:

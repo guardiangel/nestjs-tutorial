@@ -3,7 +3,7 @@ services:
   nestjs-tutorial:
     image: postgres:13
     ports:
-      - 5555:5558
+      - 5434:5432
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: 123
