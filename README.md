@@ -1,33 +1,10 @@
-## Installation
+1.Start the database
+E:\graphqlcourse\nestjs-tutorial>docker compose up nestjs-tutorial -d
+2.Start app
+E:\graphqlcourse>yarn start:dev
+3.Start prisma client
+E:\graphqlcourse\nestjs-tutorial>npx prisma studio
 
-```bash
-$ yarn install
-```
-
-## Running the app
-
-```bash
-# development
-$ yarn run start
-
-# watch mode
-$ yarn run start:dev
-
-# production mode
-$ yarn run start:prod
-```
-
-## Test
-
-```bash
-# unit tests
-$ yarn run test
-
-# e2e tests
-$ yarn run test:e2e
-
-# test coverage
-$ yarn run test:cov
 ```
 
 Introduction:
@@ -98,3 +75,11 @@ TroubleShooting:
 E:\graphqlcourse\nestjs-tutorial>yarn run lint --fix
 2.Meet error when installing class-validator class-transformer in setp 7. The problem is probably the version.
 Change ts-loader version in package.json.
+3.If modify the schema.prisma, but it doesn't work
+3.1 Try to stop the container in docker. Then run the app again.
+E:\graphqlcourse\nestjs-tutorial> yarn start:dev
+3.2 if still not work, try to delete the migrations and run the following command:
+npx prisma migrate dev.
+3.3 Run the app again.
+E:\graphqlcourse\nestjs-tutorial>docker compose up nestjs-tutorial -d
+```
