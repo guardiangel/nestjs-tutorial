@@ -5,7 +5,6 @@ import { AuthDto } from './dto';
 import * as argon from 'argon2';
 import { PrismaClientKnownRequestError } from '@prisma/client/runtime/library';
 import { JwtService } from '@nestjs/jwt';
-import { config } from 'process';
 import { ConfigService } from '@nestjs/config';
 
 @Injectable()
