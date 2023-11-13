@@ -12,4 +12,9 @@ export class UserController {
   getMe(@GetUser() user: User) {
     return user;
   }
+
+  @Get('meById')
+  getMeById(@GetUser('id') userId: number) {
+    return userId;
+  }
 }
