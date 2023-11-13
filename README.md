@@ -108,6 +108,8 @@ value: Bearer token(get it using localhost:3333/auth/signin)
 
 14. Install pactum for junit test
 E:\graphqlcourse\nestjs-tutorial>yarn add -D pactum
+E:\graphqlcourse\nestjs-tutorial> yarn db:test:restart
+E:\graphqlcourse\nestjs-tutorial> yarn prisma:testrestart
 
 
 

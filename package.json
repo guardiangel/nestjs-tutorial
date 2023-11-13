@@ -22,7 +22,12 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "jest --watch --no-cache --config ./test/jest-e2e.json"
+    "test:e2e": "jest --watch --no-cache --config ./test/jest-e2e.json",
+    "prisma:test:deploy": "prisma migrate deploy",
+    "db:test:rm": "docker compose rm test-nestjs-tutorial -s -f -v",
+    "db:test:up": "docker compose up test-nestjs-tutorial -d",
+    "db:test:restart": "yarn db:test:rm && yarn db:test:up",
+    "prisma:testrestart": "yarn prisma:test:deploy"
   },
   "dependencies": {
     "@nestjs/common": "^10.0.0",
