@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n\r\n\"email\":\"felix@gamil.com\",\r\n\"password\":\"123456\"\r\n}",
+					"raw": "{\r\n\r\n\"email\":\"felix2@gamil.com\",\r\n\"password\":\"123456\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -57,6 +57,31 @@
 					"path": [
 						"auth",
 						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:3333/users/me",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiZmVsaXhAZ2FtaWwuY29tIiwiaWF0IjoxNjk5ODM2MDM1LCJleHAiOjE2OTk4MzY5MzV9.TwfPk4wL58Rp7kPC4sfRSoSUh2yQlHDtk7juiLKaa9M",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3333/users/me",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"users",
+						"me"
 					]
 				}
 			},

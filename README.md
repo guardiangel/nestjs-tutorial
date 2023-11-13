@@ -99,6 +99,15 @@ E:\graphqlcourse\nestjs-tutorial>yarn add -D @types/passport-jwt
    E:\graphqlcourse\nestjs-tutorial>nest g controller user --no-spec
 
 
+13.Test token with postman tool:
+http://localhost:3333/users/me
+Add key and value to the headers:
+key: Authorization
+value: Bearer token(get it using localhost:3333/auth/signin)
+
+
+
+
 TroubleShooting:
 1.If you get "delete ␍ eslintprettier/prettier" error, try:
 E:\graphqlcourse\nestjs-tutorial>yarn run lint --fix
