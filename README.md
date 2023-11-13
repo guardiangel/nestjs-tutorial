@@ -106,6 +106,10 @@ key: Authorization
 value: Bearer token(get it using localhost:3333/auth/signin)
 
 
+14. Install pactum for junit test
+E:\graphqlcourse\nestjs-tutorial>yarn add -D pactum
+
+
 
 
 TroubleShooting:
@@ -120,4 +124,6 @@ E:\graphqlcourse\nestjs-tutorial> yarn start:dev
 npx prisma migrate dev.
 3.3 Run the app again.
 E:\graphqlcourse\nestjs-tutorial>docker compose up nestjs-tutorial -d
+
+4. jest version should be between 27 and 28.
 ```
